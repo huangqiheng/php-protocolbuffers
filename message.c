@@ -946,9 +946,9 @@ PHP_METHOD(protocolbuffers_message, __construct)
 }
 /* }}} */
 
-/* {{{ proto ProtocolBuffersMessage ProtocolBuffersMessage::setFrom(array $params)
+/* {{{ proto ProtocolBuffersMessage ProtocolBuffersMessage::set_from(array $params)
 */
-PHP_METHOD(protocolbuffers_message, setFrom)
+PHP_METHOD(protocolbuffers_message, set_from)
 {
 	zval *params = NULL, *instance = getThis();
     zend_bool strict = 1;
@@ -1715,7 +1715,7 @@ static zend_function_entry php_protocolbuffers_message_methods[] = {
 	PHP_ME(protocolbuffers_message, get,                  arginfo_protocolbuffers_message_get, ZEND_ACC_PUBLIC)
 	PHP_ME(protocolbuffers_message, mutable,              arginfo_protocolbuffers_message_mutable, ZEND_ACC_PUBLIC)
 	PHP_ME(protocolbuffers_message, set,                  arginfo_protocolbuffers_message_set, ZEND_ACC_PUBLIC)
-	PHP_ME(protocolbuffers_message, setFrom,              arginfo_protocolbuffers_message_set_from, ZEND_ACC_PUBLIC)
+	PHP_ME(protocolbuffers_message, set_from,              arginfo_protocolbuffers_message_set_from, ZEND_ACC_PUBLIC)
 	PHP_ME(protocolbuffers_message, append,               arginfo_protocolbuffers_message_append, ZEND_ACC_PUBLIC)
 	PHP_ME(protocolbuffers_message, hasExtension,         arginfo_protocolbuffers_message_has_extension, ZEND_ACC_PUBLIC)
 	PHP_ME(protocolbuffers_message, getExtension,         arginfo_protocolbuffers_message_get_extension, ZEND_ACC_PUBLIC)

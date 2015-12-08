@@ -147,7 +147,7 @@ namespace {
          *
          * @param array $params
          */
-        public function setFrom(array $params){}
+        public function set_from(array $params){}
 
         /**
          * append value to repeated field

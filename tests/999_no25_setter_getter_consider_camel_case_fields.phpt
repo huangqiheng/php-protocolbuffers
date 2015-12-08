@@ -72,7 +72,7 @@ if (!$t->getIsDraft()) {
 } else {
 	echo "FAULT" . PHP_EOL;
 }
-$t->setFrom(array("IsDraft" => true, "from_box_id" => 1, "TagId" => array(1, 2)));
+$t->set_from(array("IsDraft" => true, "from_box_id" => 1, "TagId" => array(1, 2)));
 if ($t->getIsDraft()) {
 	echo "OK" . PHP_EOL;
 } else {

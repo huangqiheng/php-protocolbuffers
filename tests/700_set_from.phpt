@@ -83,7 +83,7 @@ class Person extends ProtocolBuffersMessage
 }
 
 $message = new Person();
-$message->setFrom(array(
+$message->set_from(array(
 	"name" => "John",
 	"age"  => 32,
 ));
@@ -91,7 +91,7 @@ $message->setFrom(array(
 echo $message->getName() . PHP_EOL;
 echo $message->getAge() . PHP_EOL;
 
-$message->setFrom(array(
+$message->set_from(array(
 	"name" => "Akira",
 	"age"  => 24,
 ));
@@ -100,7 +100,7 @@ echo $message->getName() . PHP_EOL;
 echo $message->getAge() . PHP_EOL;
 
 
-$message->setFrom(array(
+$message->set_from(array(
     "name" => "Ken",
     "age"  => 24,
     "phone" => new Phone(array("number" => "12345")),
